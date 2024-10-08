@@ -33,6 +33,7 @@ Welcome to **Blackjack 21** – a no-frills, command-line version of the classic
    ```bash
    java -jar BlackjackGame.jar
    ```
+   <sub>(If you downloaded the jar from releases, start from step 5)</sub>
 
 ## 💵 Betting System
 
