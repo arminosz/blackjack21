@@ -44,7 +44,7 @@ Welcome to **Blackjack 21** – a no-frills, command-line version of the classic
 
 ## 🇧🇷 Tutorial Rápido (em português)
 
-Se você é brasileiro, ou entende português, aqui vai um tutorial rápido para curtir o jogo:
+Se você é brasileiro, ou entende português, aqui vai um tutorial rápido para jogar:
 
 1. **Jogar**: Quando o jogo começar, você será pedido para fazer uma **aposta**. Digite o valor e pressione **Enter**.
 2. **Ações**: Durante o jogo, você pode:
