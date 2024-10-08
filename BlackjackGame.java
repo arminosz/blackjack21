@@ -4,8 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class BlackjackGame {
-
-    // Representação das cartas e os valores
     static String[] naipes = {"♠", "♥", "♦", "♣"};
     static String[] faces = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     static int[] valores = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
@@ -14,8 +12,7 @@ public class BlackjackGame {
     static Random random = new Random();
 
     public static void main(String[] args) {
-        int saldo = 1000;  // Saldo inicial fictício do jogador
-
+        int saldo = 1000; 
         System.out.println("=== Bem-vindo ao Blackjack 21! ===");
         System.out.println("Seu saldo inicial é: $" + saldo);
 
@@ -29,8 +26,6 @@ public class BlackjackGame {
 
             List<String> maoJogador = new ArrayList<>();
             List<String> maoDealer = new ArrayList<>();
-
-            // Distribuir 2 cartas para jogador e dealer
             maoJogador.add(distribuirCarta());
             maoJogador.add(distribuirCarta());
             maoDealer.add(distribuirCarta());
@@ -61,7 +56,6 @@ public class BlackjackGame {
             }
 
             if (calcularValor(maoJogador) <= 21) {
-                // Turno do dealer (dealer para em 17 ou mais)
                 System.out.println("\nTurno do Dealer...");
                 System.out.println("Cartas do Dealer: " + maoDealer + " (Total: " + calcularValor(maoDealer) + ")");
                 while (calcularValor(maoDealer) < 17) {
@@ -87,14 +81,12 @@ public class BlackjackGame {
                 }
             }
 
-            // Verificar saldo
             System.out.println("Seu saldo atual é: $" + saldo);
             if (saldo == 0) {
                 System.out.println("Você ficou sem saldo! Jogo terminado.");
                 break;
             }
 
-            // Perguntar se deseja continuar
             System.out.print("\nVocê quer jogar novamente? (sim/não): ");
             String jogarNovamente = scanner.next().toLowerCase();
             if (!jogarNovamente.equals("sim")) {
@@ -105,20 +97,18 @@ public class BlackjackGame {
         System.out.println("Obrigado por jogar! Seu saldo final é: $" + saldo);
     }
 
-    // Função para distribuir uma carta
     public static String distribuirCarta() {
         int indiceFace = random.nextInt(faces.length);
         int indiceNaipe = random.nextInt(naipes.length);
         return faces[indiceFace] + naipes[indiceNaipe];
     }
 
-    // Função para calcular o valor da mão
     public static int calcularValor(List<String> mao) {
         int total = 0;
         int ases = 0;
 
         for (String carta : mao) {
-            String face = carta.substring(0, carta.length() - 1); // Remove o naipe
+            String face = carta.substring(0, carta.length() - 1);
             int valor = 0;
 
             for (int i = 0; i < faces.length; i++) {
@@ -132,7 +122,6 @@ public class BlackjackGame {
             total += valor;
         }
 
-        // Ajustar valor do Ás se necessário (11 ou 1)
         while (total > 21 && ases > 0) {
             total -= 10;
             ases--;
