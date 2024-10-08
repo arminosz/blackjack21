@@ -16,18 +16,22 @@ Welcome to **Blackjack 21** – a no-frills, command-line version of the classic
 
 ## 🚀 Getting Started
 
-1. Clone or download the repository.
+1. Clone or download the repository
    ```bash
-   git clone https://github.com/your-repo-link.git
+   git clone https://github.com/arminosz/blackjack21.git
    ```
-2. Make sure you have **Java 17+** installed.
+2. Make sure you have **Java 17+ (or JDK17)** installed and downloaded both java and manifest files
 3. Compile the game with:
    ```bash
-   javac Blackjack21.java
+   javac BlackjackGame.java
    ```
-4. Run the game:
+4. Compile the game to jar with:
    ```bash
-   java Blackjack21
+   jar cfm BlackjackGame.jar manifest.txt BlackjackGame.class
+   ```
+5. Run the game with:
+   ```bash
+   java -jar BlackjackGame.jar
    ```
 
 ## 💵 Betting System
@@ -52,7 +56,7 @@ Se você é brasileiro, ou entende português, aqui vai um tutorial rápido para
    - **Parar** (Stand): Manter suas cartas e passar a vez para o dealer
 3. **Objetivo**: Chegar o mais perto de 21 sem estourar. Se o dealer passar de 21, você ganha. Se suas cartas forem maiores que as do dealer sem estourar, você também ganha!
 
-Lembre-se, o saldo inicial é de **$1000** e a cada vitória, você **duplica sua aposta**.
+Lembre-se, o saldo inicial é de **$1000** e a cada vitória, você **duplica sua aposta**
 
 ---
-**Disclaimer:** This game is purely for fun, and no real money is involved (unfortunately).
+**Disclaimer:** This game is purely for fun, and no real money is involved (unfortunately)
