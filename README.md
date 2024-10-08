@@ -46,10 +46,10 @@ Welcome to **Blackjack 21** – a no-frills, command-line version of the classic
 
 Se você é brasileiro, ou entende português, aqui vai um tutorial rápido para jogar:
 
-1. **Jogar**: Quando o jogo começar, você será pedido para fazer uma **aposta**. Digite o valor e pressione **Enter**.
+1. **Jogar**: Quando o jogo começar, você será pedido para fazer uma **aposta**. Digite o valor e pressione **Enter**
 2. **Ações**: Durante o jogo, você pode:
-   - **Pedir** (Hit): Receber outra carta para tentar chegar mais perto de 21.
-   - **Parar** (Stand): Manter suas cartas e passar a vez para o dealer.
+   - **Pedir** (Hit): Receber outra carta para tentar chegar mais perto de 21
+   - **Parar** (Stand): Manter suas cartas e passar a vez para o dealer
 3. **Objetivo**: Chegar o mais perto de 21 sem estourar. Se o dealer passar de 21, você ganha. Se suas cartas forem maiores que as do dealer sem estourar, você também ganha!
 
 Lembre-se, o saldo inicial é de **$1000** e a cada vitória, você **duplica sua aposta**.
