@@ -4,13 +4,13 @@
 
 Welcome to **Blackjack 21** – a no-frills, command-line version of the classic card game, written entirely in Java. With simulated betting, you'll start with **$1000** and try to make your way to riches (or go broke trying)
 
-> **Note:** The game is in **Portuguese** – so if you're not familiar, now might be a good time to pick up a new language!
+> **Note:** The game is in **Portuguese** – so if you're not familiar, now might be a good time to pick up a new language
 
 ![Java](https://img.shields.io/badge/Java-17%2B-blue) ![Blackjack](https://img.shields.io/badge/Blackjack-21-critical) ![Promptline](https://img.shields.io/badge/UI-Command--line-lightgrey)
 
 ## 🎮 Gameplay Features
 
-- Play a classic game of **Blackjack 21** right from your command line
+- Play a game of **Blackjack 21** right from your command line
 - Simulated **betting** system with starting balance of **$1000**
 - Interface in **Portuguese**, but Blackjack's rules are universal, ofc
 
@@ -39,17 +39,16 @@ Welcome to **Blackjack 21** – a no-frills, command-line version of the classic
 
 - You start with **$1000**
 - Place your bet before the round starts
-- If you win, you double your bet. If you lose... well, you know what happens :p
+- If you win, you double your bet. If you lose, well, you lose
 
 ## 🛠️ Requirements
 
 - **Java 17** or higher
 - A terminal or command-line interface (obviously)
-- A decent sense of strategy... and luck
 
 ## 🇧🇷 Tutorial Rápido (em português)
 
-Se você é brasileiro, ou entende português, aqui vai um tutorial rápido para jogar:
+Se você é brasileiro, ou entende português, aqui um tutorial rápido para jogar:
 
 1. **Jogar**: Quando o jogo começar, você será pedido para fazer uma **aposta**. Digite o valor e pressione **Enter**
 2. **Ações**: Durante o jogo, você pode:
